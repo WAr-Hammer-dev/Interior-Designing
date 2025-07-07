@@ -1,0 +1,81 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&family=Roboto&display=swap');
+
+body {
+  background-color: #0d1b16;
+  background-image: url('https://www.transparenttextures.com/patterns/arabesque.png');
+  background-attachment: fixed;
+  background-repeat: repeat;
+  background-size: auto;
+  color: #e4cfa0;
+  font-family: 'Roboto', sans-serif;
+  margin: 0;
+  padding: 0;
+  line-height: 1.6;
+}
+
+h1, h2, h3, h4 {
+  font-family: 'Playfair Display', serif;
+  color: #f7e7c6;
+}
+
+.navbar-brand, .nav-link {
+  font-weight: 600;
+  color: #e4cfa0 !important;
+  letter-spacing: 0.5px;
+}
+
+footer {
+  border-top: 1px solid #e4cfa033;
+}
+
+.btn-outline-light {
+  border-color: #e4cfa0;
+  color: #e4cfa0;
+  font-weight: 500;
+  transition: all 0.3s ease;
+}
+
+.btn-outline-light:hover {
+  background-color: #e4cfa0;
+  color: #0d1b16;
+}
+
+.card {
+  background-color: #122821;
+  border: none;
+  border-radius: 1rem;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  overflow: hidden;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(228, 207, 160, 0.15);
+}
+
+.card img {
+  object-fit: cover;
+  height: 200px;
+  width: 100%;
+}
+
+input, textarea {
+  background-color: #0f231c;
+  border: 1px solid #e4cfa0;
+  color: #e4cfa0;
+  border-radius: 0.4rem;
+  padding: 10px;
+}
+
+input::placeholder, textarea::placeholder {
+  color: #bba87a;
+}
+
+.fade-in {
+  animation: fadeIn 1s ease-in-out both;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
